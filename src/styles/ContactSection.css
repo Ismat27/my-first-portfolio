@@ -1,0 +1,40 @@
+.contact-container {
+    max-width: 500px;
+}
+
+form > div {
+    margin-block: 20px;
+}
+input, textarea {
+    padding-block: 10px;
+    width: 100%;
+    font-size: 18px;
+    text-indent: 10px;
+}
+.name-input {
+    margin-bottom: 20px;
+}
+textarea {
+    max-width: 500px;
+    text-indent: 0;
+    padding: 0 10px;
+}
+form .action-btn {
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    form > div {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        display: flex;
+    }
+    .name-input {
+        margin-bottom: 0;
+    }
+}
