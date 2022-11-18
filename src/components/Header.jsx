@@ -1,20 +1,18 @@
 import styled from "styled-components"
 import Nav from "./Nav"
-import { useGlobalContext } from "../context"
 import Hamburger from "./Hamburger"
 const Header = () => {
-    const {isMenuOpen} = useGlobalContext()
     
     return (
         <Wrapper>
             <div className="container header">
                 <div className="xyz">
-                    Ismail Adegbite
+                    <h2>Ismail Adegbite</h2>
                     <Hamburger />
                 </div>
                 <Nav />
             </div>
-            <div className="head-q4"><a className="nav-link" href={'/'}></a></div>
+            {/* <div className="head-q4"><a className="nav-link" href={'/'}></a></div> */}
         </Wrapper>
     )
 }

@@ -6,6 +6,8 @@ form > div {
     margin-block: 20px;
 }
 input, textarea {
+    border: 1px solid black;
+    display: block;
     padding-block: 10px;
     width: 100%;
     font-size: 18px;

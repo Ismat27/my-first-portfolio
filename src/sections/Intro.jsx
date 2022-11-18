@@ -1,11 +1,11 @@
-import image from '../images/profile-one.png'
+import smartDev from '../images/smartdev.jpg'
 
 const Intro = () => {
     return (
         <section id="intro">
             <div className="container intro">
                 <div className="intro-img-container">
-                    <img className="intro-img" src={image} alt="" />
+                    <img className="intro-img" src={smartDev} alt="smartDev" />
                 </div>
                 <div className='intro-text'>
                     <h1>HI<br/>I am <span className="my-name">Ismail Adegbite</span></h1>

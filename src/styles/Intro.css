@@ -1,6 +1,11 @@
 .intro {
     margin-bottom: 80px;
 }
+.intro-img {
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+}
 .intro-text {
     max-width: 500px;
 }
@@ -13,7 +18,7 @@
 }
 .my-name {
     color: #FF3E78;
-  }
+}
 .action-links {
     margin-top: 1rem;
 }
@@ -52,6 +57,12 @@
     }
 }
 @media (min-width: 768px) {
+    .intro {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: 4fr 6fr;;
+        gap: 50px;
+    }
     
 }
 @media (min-width: 992px) {
@@ -66,6 +77,6 @@
         gap: 100px;
     }
     .intro-text {
-        padding-top: 80px;
+        padding-top: 50px;
     }
 }

@@ -9,17 +9,17 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
-  background: #E5E5E5;
 }
 .body {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   background-color: white;
+  /* background: #E5E5E5; */
+  padding-bottom: 100px;
+
 }
 .container {
   width: 90%;
-  max-width: 1440px;
-  max-width: 1100px;
   margin: auto;
 }
 img {
@@ -44,10 +44,12 @@ p {
 .nav-link {
   color: #000000;
   position: relative;
+  font-size: 14px;
+  font-weight: 600;
 }
-/* .nav-link:active, .nav-link:focus, .nav-link:hover {
+.nav-link:active, .nav-link:focus, .nav-link:hover {
   color: #FF3E78;
-} */
+}
 .nav-link::after {
   display: inline-block;
   position: absolute;
@@ -69,9 +71,12 @@ header {
 nav {
   transform: translate(-100%);
   margin-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 .nav-opened {
   transform: translate(0%);
+  height: 125px;
 }
 .head-q4 {
   width: 0;
@@ -92,17 +97,17 @@ nav {
   font-size: 20px;
 }
 .about-p, .skill-p {
-  line-height: 40px;
+  line-height: 30px;
 }
 @media (min-width: 768px) {
   .header {
-    /* padding-block: 40px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   nav {
     transform: translate(0%);
+    height: auto;
     margin-top: 0;
     margin-left: auto;
   }
