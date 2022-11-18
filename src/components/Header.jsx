@@ -3,9 +3,8 @@ import Nav from "./Nav"
 import { useGlobalContext } from "../context"
 import Hamburger from "./Hamburger"
 const Header = () => {
-    const data = useGlobalContext()
-    console.log(data);
-
+    const {isMenuOpen} = useGlobalContext()
+    
     return (
         <Wrapper>
             <div className="container header">

@@ -1,9 +1,11 @@
 import { useState, useContext } from "react"
 import { refContext } from "../App"
+import { useGlobalContext } from "../context"
+
 const Nav = () => {
+    const {isMenuOpen} = useGlobalContext()
     const {aboutRef, contactRef} = useContext(refContext)
 
-    const navs = ['home', 'latest work', 'about-me', 'contact-me']
     const [activeNav, setActiveNav] = useState('home')
 
     const navClick = (event, nav, ref) => {
@@ -16,7 +18,7 @@ const Nav = () => {
     }
 
     return (
-        <nav>
+        <nav className={isMenuOpen? 'nav-opened': ''}>
             <ul className="nav-items">
                 <li className="nav-item">
                     <a onClick={(event) => navClick(event, 'home', aboutRef)} className="nav-link" href={'/'}>Home</a>

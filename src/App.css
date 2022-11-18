@@ -67,7 +67,7 @@ header {
   position: relative;
 }
 nav {
-  /* transform: translate(-100%); */
+  transform: translate(-100%);
   margin-top: 30px;
 }
 .nav-opened {
