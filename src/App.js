@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Intro from './sections/Intro';
 import AboutMe from './sections/About';
 import ContactSection from './sections/ContactSection';
+import LatestWork from './sections/LatestWork';
 
 import { AppProvider } from './context';
 
@@ -22,6 +23,7 @@ function App() {
             <Header />
             <Intro />
             <AboutMe  />
+            <LatestWork />
             <ContactSection />
           </refContext.Provider>
       </AppProvider>

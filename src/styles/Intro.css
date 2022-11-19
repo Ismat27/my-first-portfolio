@@ -23,8 +23,6 @@
     margin-top: 1rem;
 }
 .action-link, .action-btn {
-    display: block;
-    text-align: center;
     max-width: 245px;
     margin: auto;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
@@ -38,7 +36,7 @@
 }
 .download-cv, .action-btn {
     margin-bottom: 25px;
-    background-color: #FF3E78;;
+    background-color: #FF3E78;
 }
 .download-cv:hover, .action-btn:hover{
     background-color: #FD7FA8;
